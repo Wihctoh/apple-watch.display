@@ -1,0 +1,57 @@
+$main_color: #222222;
+$white_color: #fff;
+$grey_color: #828282;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "K2D";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 1400px;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  background-color: $white_color;
+}
+
+.wrapper {
+  width: 600px;
+  height: 700px;
+  border: 10px solid $grey_color;
+  border-radius: 50px;
+  background-color: $main_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .time {
+    padding: 56px 55px 9px 0;
+    font-size: 30px;
+    color: $white_color;
+    display: flex;
+    align-self: flex-end;
+  }
+  .entryWatch {
+    background-image: url(./assets/entryWatch.svg);
+    width: 472px;
+    height: 472px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .date {
+    color: $white_color;
+    font-size: 20px;
+    padding-top: 17px;
+  }
+  .brick {
+    width: 230px;
+    height: 10px;
+    padding-top: 12px;
+    background-color: $white_color;
+  }
+}

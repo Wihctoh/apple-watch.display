@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "K2D";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 1400px;
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 600px;
+  height: 700px;
+  border: 10px solid #828282;
+  border-radius: 50px;
+  background-color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .time {
+  padding: 56px 55px 9px 0;
+  font-size: 30px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.wrapper .entryWatch {
+  background-image: url(./assets/entryWatch.svg);
+  width: 472px;
+  height: 472px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper .date {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 17px;
+}
+.wrapper .brick {
+  width: 230px;
+  height: 10px;
+  padding-top: 12px;
+  background-color: #fff;
+}
