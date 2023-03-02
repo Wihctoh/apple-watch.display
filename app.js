@@ -12,14 +12,10 @@ function clock(dynamicTime_) {
 }
 
 function date(dynamicDate_) {
-  let now = new Date();
-  let day = now.getDay();
-  let month = now.getMonth();
-  let year = now.getFullYear();
-  let date1 = `${day}.${month}.${year}`;
+  let now = new Date().toLocaleDateString();
 
-  dynamicDate_.innerHTML = date1;
+  dynamicDate_.innerHTML = now;
 }
 
-setInterval(date, 1000, dynamicDate);
+setInterval(date, 60000, dynamicDate);
 setInterval(clock, 1000, dynamicTime);
