@@ -30,11 +30,9 @@ class AppleDisplay {
     const dynamicDate = document.querySelector(".date");
 
     let now = new Date();
-    let time = now.toLocaleTimeString("BY");
-    let date = now.toLocaleDateString("BY");
 
-    dynamicTime.innerHTML = time;
-    dynamicDate.innerHTML = date;
+    dynamicTime.innerHTML = now.toLocaleTimeString("BY");
+    dynamicDate.innerHTML = now.toLocaleDateString("BY");
   }
 }
 
