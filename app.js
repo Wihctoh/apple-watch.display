@@ -22,28 +22,19 @@
 
 class AppleDisplay {
   constructor() {
-    setInterval(this.date, 1000, this.dynamicDate);
-    setInterval(this.clock, 1000, this.dynamicTime);
+    setInterval(this.clock, 1000);
   }
 
   clock() {
     const dynamicTime = document.querySelector(".time");
-
-    let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes(); 
-    let seconds = now.getSeconds();
-    let clock1 = `${hours}:${minutes}:${seconds}`;
-
-    dynamicTime.innerHTML = clock1;
-  }
-
-  date() {
     const dynamicDate = document.querySelector(".date");
 
-    let now = new Date().toLocaleDateString();
+    let now = new Date();
+    let time = now.toLocaleTimeString("BY");
+    let date = now.toLocaleDateString("BY");
 
-    dynamicDate.innerHTML = now;
+    dynamicTime.innerHTML = time;
+    dynamicDate.innerHTML = date;
   }
 }
 
